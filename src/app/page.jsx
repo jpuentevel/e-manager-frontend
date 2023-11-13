@@ -11,16 +11,16 @@ export default function Home() {
                 <div className="flex flex-col items-center pt-10 sm:flex-row">
                     <div className="w-full sm:w-1/2 p-4 mb-4 sm:mb-0">
                         <UserCard
-                            image="/admin_profile_card.svg"
-                            type="Administrador"
-                            href={"/admin"}
+                            image="/login.svg"
+                            text="Iniciar Sesión"
+                            href={"/login"}
                         />
                     </div>
                     <div className="w-full sm:w-1/2 p-4 mb-4 sm:mb-0">
                         <UserCard
-                            image="/user_profile_card.svg"
-                            type="Organizador"
-                            href={"/organizador"}
+                            image="/signup.svg"
+                            text="Registrarse"
+                            href={"/signup"}
                         />
                     </div>
                 </div>

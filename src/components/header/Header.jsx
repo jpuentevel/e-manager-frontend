@@ -12,7 +12,7 @@ const Header = () => {
                         width={100}
                         height={100}
                     />
-                    <h1 className="text-3xl ml-6 font-bold text-orange-100">Manejador de Eventos - UdeC</h1>
+                    <h1 className="text-3xl ml-6 font-bold text-orange-100">Manejador de Eventos UdeC</h1>
                 </div>
             </nav>
         </>

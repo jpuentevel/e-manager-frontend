@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Manjeador de Eventos UdeC',
-  description: 'Manejadro de eventos de la Universidad de Cartagena',
+  description: 'Manejador de eventos de la Universidad de Cartagena',
 }
 
 export default function RootLayout({ children }) {
