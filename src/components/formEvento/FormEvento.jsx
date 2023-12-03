@@ -156,8 +156,7 @@ const FormEvento = () => {
                             >
                                 Guardar
                             </button>
-                        </div
-                        >
+                        </div>
                     </form>
                 </div>
             </div>
