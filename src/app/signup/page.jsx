@@ -1,8 +1,10 @@
+"use client"
+
+import FormRegistro from "@/components/formRegistro/FormRegistro";
+
 const SignUpPage = () => {
     return (
-        <>
-            <h1>Sign Up</h1>
-        </>
+        <FormRegistro />
     );
 }
 
