@@ -1,7 +1,8 @@
 import Link from "next/link";
-import TableEventos from "@/components/tableEventos/TableEventos";
+import TableEvento from "@/components/tableEvento/TableEvento";
 
 const AdminHome = () => {
+
     return (
         <>
             <div className="container p-10 bg-orange-50 m-0 min-w-full min-h-full">
@@ -17,7 +18,8 @@ const AdminHome = () => {
                             Crear nuevo evento
                         </Link>
                     </div>
-                    <TableEventos />
+
+                    <TableEvento />
                 </div>
 
                 <div className="mx-auto my-9 max-w-6xl">
@@ -32,4 +34,4 @@ const AdminHome = () => {
         </>
     )
 }
- export default AdminHome;
+export default AdminHome;
