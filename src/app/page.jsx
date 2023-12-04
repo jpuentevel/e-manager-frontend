@@ -1,5 +1,5 @@
 import Link from "next/link";
-import UserCard from "@/components/userCard/UserCard";
+import UserCardComponent from "@/components/userCard/UserCardComponent";
 
 export default function Home() {
   return (
@@ -10,14 +10,14 @@ export default function Home() {
                 <h3 className="my-12 sm:text-5xl text-4xl font-semibold text-center">¿Cómo desea ingresar al sistema?</h3>
                 <div className="flex flex-col items-center pt-10 sm:flex-row">
                     <div className="w-full sm:w-1/2 p-4 mb-4 sm:mb-0">
-                        <UserCard
+                        <UserCardComponent
                             image="/login.svg"
                             text="Iniciar Sesión"
                             href={"/login"}
                         />
                     </div>
                     <div className="w-full sm:w-1/2 p-4 mb-4 sm:mb-0">
-                        <UserCard
+                        <UserCardComponent
                             image="/signup.svg"
                             text="Registrarse"
                             href={"/signup"}

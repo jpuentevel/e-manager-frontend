@@ -2,7 +2,7 @@ import Link from "next/link";
 import {useState} from "react";
 import Image from "next/image";
 
-const FormLogin = () => {
+const FormLoginComponent = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -92,4 +92,4 @@ const FormLogin = () => {
     )
 }
 
-export default FormLogin;
+export default FormLoginComponent;

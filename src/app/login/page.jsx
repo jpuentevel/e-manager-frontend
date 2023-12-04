@@ -1,10 +1,10 @@
 "use client"
 
-import FormLogin from "@/components/formLogin/FormLogin";
+import FormLoginComponent from "@/components/formLogin/FormLoginComponent";
 
 const LoginPage = () => {
     return (
-        <FormLogin />
+        <FormLoginComponent />
     )
 }
 

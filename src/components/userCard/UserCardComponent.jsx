@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const UserCard = (props) => {
+const UserCardComponent = (props) => {
     return (
         <>
             <div className="rounded-3xl border-4 border-amber-500 bg-orange-50 p-7">
@@ -24,4 +24,4 @@ const UserCard = (props) => {
     )
 }
 
-export default UserCard;
+export default UserCardComponent;

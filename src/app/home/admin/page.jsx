@@ -1,7 +1,16 @@
 import Link from "next/link";
-import TableEvento from "@/components/tableEvento/TableEvento";
+import TableEventoComponent from "@/components/tableEvento/TableEventoComponent";
 
-const AdminHome = () => {
+const loadData = async () => {
+    const res = await fetch("https://jsonplaceholder.typicode.com/users")
+    const data = await res.json()
+    console.log(data)
+    return data
+}
+
+const AdminHome = async () => {
+
+    const data = await loadData()
 
     return (
         <>
@@ -19,7 +28,7 @@ const AdminHome = () => {
                         </Link>
                     </div>
 
-                    <TableEvento />
+                    <TableEventoComponent data={data} />
                 </div>
 
                 <div className="mx-auto my-9 max-w-6xl">

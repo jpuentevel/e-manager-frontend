@@ -1,8 +1,8 @@
-import FormEvento from "@/components/formEvento/FormEvento";
+import FormEventoComponent from "@/components/formEvento/FormEventoComponent";
 
 const CrearEventoPage = () => {
     return (
-        <FormEvento/>
+        <FormEventoComponent/>
     )
 }
 

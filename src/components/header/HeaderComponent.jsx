@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Header = () => {
+const HeaderComponent = () => {
 
     return (
         <>
@@ -19,4 +19,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default HeaderComponent

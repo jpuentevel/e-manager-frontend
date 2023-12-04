@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {useState} from "react";
 
-const FormRegistro = () => {
+const FormRegistroComponent = () => {
     const [nombres, setNombre] = useState('');
     const [apellidos, setApellidos] = useState('');
     const [organizacion, setOrganizacion] = useState('');
@@ -267,4 +267,4 @@ const FormRegistro = () => {
     )
 }
 
-export default FormRegistro;
+export default FormRegistroComponent;

@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
 
-const FormEvento = () => {
+const FormEventoComponent = () => {
     const [nombreEvento, setNombreEvento] = useState('');
     const [fechaEvento, setFechaEvento] = useState('');
     const [lugarEvento, setLugarEvento] = useState('');
@@ -164,4 +164,4 @@ const FormEvento = () => {
     )
 }
 
-export default FormEvento
+export default FormEventoComponent

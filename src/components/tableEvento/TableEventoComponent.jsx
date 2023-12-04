@@ -1,42 +1,41 @@
 "use client"
 
 import Link from "next/link";
-import { useState } from 'react'
+import {useState} from 'react'
 import {
-    useReactTable,
-    getCoreRowModel,
     flexRender,
+    getCoreRowModel,
+    getFilteredRowModel,
     getPaginationRowModel,
     getSortedRowModel,
-    getFilteredRowModel
+    useReactTable
 } from '@tanstack/react-table'
-import data from '../../assets/MOCK_DATA.json'
 
-const SimpleTable = () => {
+const TableEventoComponent = ({data}) => {
 
     const columns = [
         {
-            Header: 'ID',
+            header: 'ID',
             accessorKey: 'id'
         },
         {
-            Header: 'Evento',
-            accessorKey: 'evento'
+            header: 'Evento',
+            accessorKey: 'name'
         },
         {
-            Header: 'Organizador',
-            accessorKey: 'organizador'
+            header: 'Organizador',
+            accessorKey: 'username'
         },
         {
-            Header: 'Estado',
-            accessorKey: 'estado'
+            header: 'Estado',
+            accessorKey: 'email'
         },
         {
-            Header: 'Ver',
-            accessorKey: 'link',
+            header: 'Ver',
+            accessorKey: 'id',
             cell: info => {
                 const cell_valor = info.getValue()
-                const link_evento = `/evento/${cell_valor}`
+                const link_evento = `/home/admin/evento/${cell_valor}`
                 return (
                     <Link
                         className="bg-orange-500 hover:bg-orange-600 text-white text-l font-semibold py-2 px-4 rounded"
@@ -102,7 +101,6 @@ const SimpleTable = () => {
                             ))}
                         </tr>
                     ))}
-
                 </thead>
                 <tbody>
                     {table.getRowModel().rows.map((row) => (
@@ -135,4 +133,4 @@ const SimpleTable = () => {
     )
 }
 
-export default SimpleTable;
+export default TableEventoComponent;
