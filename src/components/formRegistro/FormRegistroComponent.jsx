@@ -50,31 +50,71 @@ const FormRegistroComponent = () => {
                     width={100}
                     height={100}
                 />
-                <div className="flex flex-col items-center sm:flex-row">
-                    <Link
-                        href={"#"}
-                        onClick = {() => setPulsado(1)}
-                        className="mx-auto bg-orange-500 hover:bg-orange-600 text-xl text-white font-bold py-3 px-6 my-3 rounded"
-                    >
-                        Asistente
-                    </Link>
 
-                    <Link
-                        href={"#"}
-                        onClick = {() => setPulsado(2)}
-                        className="mx-auto bg-orange-500 hover:bg-orange-600 text-xl text-white font-bold py-3 px-6 my-3 rounded"
-                    >
-                        Organizador
-                    </Link>
+                {pulsado == 0 &&(
+                    <form onSubmit={handleSubmit}>
+                        <div className="my-6">
+                            <label
+                                className="block text-gray-700 text-xl font-bold mb-2"
+                                htmlFor="email"
+                            >
+                                Email
+                            </label>
+                            <input
+                                type="email"
+                                className="border border-gray-300 p-2 w-full"
+                                id="email"
+                                placeholder="Email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                
+                            />
+                        </div>
+                        <div className="my-6">
+                            <label
+                                className="block text-gray-700 text-xl font-bold mb-2"
+                                htmlFor="password"
+                            >
+                                Contraseña
+                            </label>
+                            <input
+                                type="password"
+                                className="border border-gray-300 p-2 w-full"
+                                id="password"
+                                placeholder="Contraseña"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                            />
+                        </div>
 
-                    <Link
-                        href={"#"}
-                        onClick = {() => setPulsado(3)}
-                        className="mx-auto bg-orange-500 hover:bg-orange-600 text-xl text-white font-bold py-3 px-6 my-3 rounded"
-                    >
-                        Ponente
-                    </Link>
-                </div>
+                        <div className="flex flex-col items-center sm:flex-row">
+                            <Link
+                                href={"#"}
+                                onClick = {() => setPulsado(1)}
+                                className="mx-auto bg-orange-500 hover:bg-orange-600 text-xl text-white font-bold py-3 px-6 my-3 rounded"
+                            >
+                                Asistente
+                            </Link>
+
+                            <Link
+                                href={"#"}
+                                onClick = {() => setPulsado(2)}
+                                className="mx-auto bg-orange-500 hover:bg-orange-600 text-xl text-white font-bold py-3 px-6 my-3 rounded"
+                            >
+                                Organizador
+                            </Link>
+
+                            <Link
+                                href={"#"}
+                                onClick = {() => setPulsado(3)}
+                                className="mx-auto bg-orange-500 hover:bg-orange-600 text-xl text-white font-bold py-3 px-6 my-3 rounded"
+                            >
+                                Ponente
+                            </Link>
+                        </div>
+                    </form>
+                )}
+                
 
                 {pulsado != 0 && (
                         <form onSubmit={handleSubmit}>
@@ -194,38 +234,7 @@ const FormRegistroComponent = () => {
                                 />
                             </div>
                         )}
-                        <div className="my-6">
-                        <label
-                            className="block text-gray-700 text-xl font-bold mb-2"
-                            htmlFor="email"
-                        >
-                            Email
-                        </label>
-                        <input
-                            type="email"
-                            className="border border-gray-300 p-2 w-full"
-                            id="email"
-                            placeholder="Email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                        />
-                        </div>
-                        <div className="my-6">
-                        <label
-                            className="block text-gray-700 text-xl font-bold mb-2"
-                            htmlFor="password"
-                        >
-                            Contraseña
-                        </label>
-                        <input
-                            type="password"
-                            className="border border-gray-300 p-2 w-full"
-                            id="password"
-                            placeholder="Contraseña"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                        />
-                        </div>
+                        
                         </form>
                 )}
                 <div className="bg-orange-500 h-0.5 mb-3 mt-7"></div>
