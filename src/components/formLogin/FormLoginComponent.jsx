@@ -59,12 +59,12 @@ const FormLoginComponent = () => {
                             />
                         </div>
                         <div className="mt-9">
-                            <button
-                                type="submit"
+                            <Link //Antes era un button submit
+                                href={"/home/admin"}
                                 className="bg-orange-500 hover:bg-orange-600 text-xl text-white font-bold py-2 px-4 rounded"
                             >
                                 Ingresar
-                            </button>
+                            </Link>
                         </div>
                     </form>
 
@@ -79,7 +79,7 @@ const FormLoginComponent = () => {
                         </Link>
 
                         <Link
-                            href={"#"}
+                            href={"/signup"}
                             className="mx-auto bg-orange-500 hover:bg-orange-600 text-xl text-white font-bold py-3 px-6 my-3 rounded"
                         >
                             Ir al registro

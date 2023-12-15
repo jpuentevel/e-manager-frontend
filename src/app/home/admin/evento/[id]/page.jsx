@@ -1,4 +1,4 @@
-import EventoAdminViewComponent from "@/components/eventoAdminViewComponent/EventoAdminViewComponent";
+import EventoAdminViewComponent from "@/components/eventoAdminView/EventoAdminViewComponent";
 
 const loadData = async (id) => {
     const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
